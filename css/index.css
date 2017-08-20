@@ -1,1 +1,16 @@
 
+.head {
+	width: 100%;
+	height: 200px;
+	background: lighthblue;
+}
+.head .head-content {
+	width: 1200px;
+	height: 200px;
+	line-height: 200px;
+	text-align: center;
+	margin: 0 auto;
+}
+.head h3 {
+
+}
