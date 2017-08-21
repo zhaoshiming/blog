@@ -3,9 +3,9 @@ layout: default
 title: 我的博客
 ---
 
-<h2>{{ page.title }}</h2>
-<p>最新的测试</p>
-<ul>
+<h2 class="mt-ten">{{ page.title }}</h2>
+<p class="mt-ten">最新的测试</p>
+<ul class="mt-ten">
 	{% for post in site.posts %}
 	<li>{{ post.date | date_to_string }} <a href="{{site.baseurl}}{{post.url}}">{{post.title}}</a></li>
 	{% endfor %}
