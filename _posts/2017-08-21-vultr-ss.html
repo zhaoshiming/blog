@@ -5,63 +5,63 @@ title: vultr server 搭建教程
 
 <h2>{{ page.title }}</h2>
 
-原文是在 https://my.oschina.net/u/1167564/blog/851680
-1. create server in vultr
-2. get server ip, username, password
-3. use xshell, then connect to the serve which you have built before
-4. 新建连接，设置常规名字 *** ，协议SSH，主机ip，端口号默认是22。设置用户身份验证，填写用户名和密码，点击确定之后进行连接。
-5. 安装组件( not include $ )
-	$ yum install m2crypto python-setuptools
-	$ easy_install pip
-	$ pip install shadowsocks
-6. 配置服务器参数
-	$ vi  /etc/shadowsocks.json
-7. 写入配置
-	{
-	    "server":"0.0.0.0",            => 你的服务器ip
-	    "server_port":443,    		   => 你可以自定义端口
-	    "local_address": "127.0.0.1",  => 你的服务器ip
-	    "local_port":1080,
-	    "password":"123456",           => 你自定义的密码
-	    "timeout":300,
-	    "method":"aes-256-cfb",
-	    "fast_open": false
-	}
-	下面的是多端口配置
-	{
-	    "server":"0.0.0.0",
-	    "local_address": "127.0.0.1",
-	    "local_port":1080,
-	    "port_password": {
-	         "443": "443",
-	         "8888": "8888"
-	     },
-	    "timeout":300,
-	    "method":"aes-256-cfb",
-	    "fast_open": false
-	}
-编辑完成之后，保存退出，esc => :wq => enter
+<p>原文是在<a href="https://my.oschina.net/u/1167564/blog/851680">https://my.oschina.net/u/1167564/blog/851680</a></p>
+<p>1. create server in vultr</p>
+<p>2. get server ip, username, password</p>
+<p>3. use xshell, then connect to the serve which you have built before<p>
+<p>4. 新建连接，设置常规名字 *** ，协议SSH，主机ip，端口号默认是22。设置用户身份验证，填写用户名和密码，点击确定之后进行连接。</p>
+<p>5. 安装组件( not include $ )</p>
+	$ yum install m2crypto python-setuptools<br>
+	$ easy_install pip<br>
+	$ pip install shadowsocks<br>
+6. 配置服务器参数<br>
+	$ vi  /etc/shadowsocks.json<br>
+7. 写入配置<br>
+	{<br>
+	    "server":"0.0.0.0",            => 你的服务器ip<br>
+	    "server_port":443,    		   => 你可以自定义端口<br>
+	    "local_address": "127.0.0.1",  => 你的服务器ip<br>
+	    "local_port":1080,<br>
+	    "password":"123456",           => 你自定义的密码<br>
+	    "timeout":300,<br>
+	    "method":"aes-256-cfb",<br>
+	    "fast_open": false<br>
+	}<br>
+	下面的是多端口配置<br>
+	{<br>
+	    "server":"0.0.0.0",<br>
+	    "local_address": "127.0.0.1",<br>
+	    "local_port":1080,<br>
+	    "port_password": {<br>
+	         "443": "443",<br>
+	         "8888": "8888"<br>
+	     },<br>
+	    "timeout":300,<br>
+	    "method":"aes-256-cfb",<br>
+	    "fast_open": false<br>
+	}<br>
+编辑完成之后，保存退出，esc => :wq => enter<br>
+<br>
+8. 配置防火墙<br>
+	# 安装防火墙<br>
+	$ yum install firewalld<br>
+	# 启动防火墙<br>
+	$ systemctl start firewalld<br>
+<br>
+9. 开启防火墙对应端口<br>
+	# 端口号是你自己设置的端口， 就是上面的server_port<br>
+	$ firewall-cmd --permanent --zone=public --add-port=443/tcp<br>
+	$ firewall-cmd --reload<br>
 
-8. 配置防火墙
-	# 安装防火墙
-	$ yum install firewalld
-	# 启动防火墙
-	$ systemctl start firewalld
+10. start ss<br>
+	$ ssserver -c /etc/shadowsocks.json<br>
+	或者后台运行<br>
+	$ nohup ssserver -c /etc/shadowsocks.json &<br>
+<br><br>
 
-9. 开启防火墙对应端口
-	# 端口号是你自己设置的端口， 就是上面的server_port
-	$ firewall-cmd --permanent --zone=public --add-port=443/tcp
-	$ firewall-cmd --reload
-
-10. start ss
-	$ ssserver -c /etc/shadowsocks.json
-	或者后台运行
-	$ nohup ssserver -c /etc/shadowsocks.json &
-
-
-以上就是服务器的全部配置，ios是wingy，windows是shadowsocks。
-
-以下是加速工具方法
+以上就是服务器的全部配置，ios是wingy，windows是shadowsocks。<br>
+<br>
+以下是加速工具方法<br>
 
 Vultr CentOS7安装Google BBR加速工具方法
 
