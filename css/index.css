@@ -17,4 +17,13 @@
 	width: 666.6px;
 	margin: 0 auto;
 }
-
+.lead {
+	font-size: 18px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+.rectangle{
+	width: 0;
+	height: 0;
+	border: 5px solid #000; 
+}
