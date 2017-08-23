@@ -27,3 +27,7 @@
 	height: 0;
 	border: 5px solid #000; 
 }
+.date {
+	color: blue;
+	font-size: 13px;
+}

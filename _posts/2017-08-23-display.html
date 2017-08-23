@@ -1,0 +1,22 @@
+---
+layout: default
+title: display属性解析
+---
+
+<h2>{{ page.title }}</h2>
+<p>这里是一些对css的display属性的整理</p>
+<p>display 有三种属性，分别是 inline block inline-block</p>
+<p>inline 是代表 行内元素，设置宽高不起作用，但是设置line-height会起作用,实际是把盒子的高度撑起来了，但盒子的高度不容易计算，因为你不知道元素的高度。</p><br>
+<p>行内元素设置padding和margin的时候，left和right的值是会起作用的，但是上下的是不起作用的。这里需要注意一点的是，设置padding的时候你会发现，虽然对上下没有影响，但是你给元素加上背景色之后就会发现其实上面的元素会被覆盖，下面的元素会被抬起。</p>
+<ul>
+	<li></li>
+	<li></li>
+	<li></li>
+	<li></li>
+</ul>
+<br>
+<h3>margin属性</h3>
+<p>
+	元素的margin就是外边距，就是和其他元素的距离。
+</p>
+<p>{{ page.date | date_to_string }}</p>
