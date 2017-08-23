@@ -15,6 +15,7 @@
 }
 .container {
 	width: 666.6px;
+	min-height: 800px;
 	margin: 0 auto;
 }
 .lead {
@@ -63,10 +64,6 @@
 	justify-content: center;
 	color: #af6a6a;
 	background: #e0dada;
-	position: fixed;
-	left: 0;
-	right: 0;
-	bottom: 0;
 }	
 .wrap-foot-me {
 	height: 150px;	
