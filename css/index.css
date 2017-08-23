@@ -33,6 +33,10 @@
 }
 .siamess-left {
 	position: relative;
+	font-size: 18px;
+	margin: 10px 0 10px 0;
+	font-weight: bold;
+    font-style: italic;
 }
 .siamess-left::before {
 	content: "";
