@@ -12,8 +12,8 @@ title: css伪类
 <p class="siamess-left">伪类和伪元素的区别</p>
 <p>伪类的操作对象是文档树中已有的元素，而伪元素则创建了一个文档数外的元素。因此，伪类与伪元素的区别在于：有没有创建一个文档树之外的元素。</p>
 <p class="siamess-left">具体用法</p>
-<img src="/img/fake.png"><br>
-<img src="/img/fake2.png"><br>
+<img src="/img/fake.png" class="image" /><br>
+<img src="/img/fake2.png" class="image" /><br>
 <p class="siamess-left">我的小demo</p>
 <p>这里主要讲下伪元素的实现方法，比如给标题添加一个左引导，或者是给元素右边加一个小三角形。实现的思路就是元素的position: relative; 元素的::before或者是::after伪元素的position: absolute;进行绝对定位，主要会去设置content: ''; width: '';border: ;这几个属性来实现你需要的效果。 </p>
 <p>
