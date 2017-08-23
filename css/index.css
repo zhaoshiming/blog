@@ -31,3 +31,15 @@
 	color: blue;
 	font-size: 13px;
 }
+.siamess-left {
+	position: relative;
+}
+.siamess-left::before {
+	content: "",
+	width: 5px;
+	background: red;
+	position: absolute;
+	top: 0;
+	left: -10px;
+	bottom: 0;
+}
