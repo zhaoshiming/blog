@@ -53,3 +53,12 @@
 	padding-bottom: 5px;
 	border-bottom: 5px solid #f95353;
 }
+.foot-me {
+	width: 666.6px;
+	margin: 0 auto;
+	height: 150px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
