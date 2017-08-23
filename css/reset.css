@@ -12,8 +12,14 @@ ul li {
 	text-decoration: none;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 800px) {
   .container {
     width: 100%;
+  }
+  .head .head-content {
+  	width: 100%;
+  }
+  .foot-me {
+  	width: 100%;
   }
 }
