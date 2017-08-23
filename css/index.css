@@ -50,4 +50,6 @@
 .index-wrap-nav {
 	margin-top: 20px;
 	margin-bottom: 10px;
+	padding-bottom: 5px;
+	border-bottom: 5px solid #f95353;
 }
