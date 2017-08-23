@@ -14,8 +14,11 @@
 	</div>
 
 	<div class="container">
-	<span><a href="http://www.siamess.cn">首页 - </a></span>
-	<span><a href="{{site.baseurl}}{{post.url}}">{{ page.title }}</a></span>
+	<div class="index-wrap-nav">
+		<span><a href="http://www.siamess.cn">首页</a></span>
+		<span> - </span>
+		<span><a href="{{site.baseurl}}{{post.url}}">{{ page.title }}</a></span>
+	</div>
 	{{ content }}
 	</div>
 	
