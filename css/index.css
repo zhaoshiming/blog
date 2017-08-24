@@ -72,3 +72,20 @@
 	width: 100%;
 	height: 100%;
 }
+.important {
+    line-height: 30px;
+    height: 30px;
+    background-color: #696969;
+    position: relative;
+    padding-left: 15px;
+    color: #fff;
+}
+.important::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    background:#f10604;
+    width: 5px;
+}
