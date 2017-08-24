@@ -77,7 +77,8 @@
     height: 30px;
     background-color: #696969;
     position: relative;
-    padding-left: 15px;
+    padding:5px 15px;
+    margin: 10px 0;
     color: #fff;
 }
 .important::before {
