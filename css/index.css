@@ -73,13 +73,12 @@
 	height: 100%;
 }
 .important {
-    line-height: 30px;
-    height: 30px;
+
     background-color: #696969;
     position: relative;
     padding:5px 15px;
     margin: 10px 0;
-    color: #fff;
+    color: #fff;   
 }
 .important::before {
     content: "";
