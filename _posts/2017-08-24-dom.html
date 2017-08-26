@@ -27,9 +27,16 @@ title: dom操作整理
 </ul>
 <h3 class="siamess-left">属性节点的修改是通过setAttribute和getAttribute,那么文本节点的修改是通过什么呢？</h3>
 <p>答案是nodeValue.</p>
-
-
-
+<p>但是元素节点的nodeValue肯定是为空的，因为元素节点所包含的文字是文本节点，所以想获取元素节点中的值，那么就必须用childNodes获取元素节点的第一个文本节点，再获取文本节点的nodeValue.</p>
+<h4 class="siamess-left">firstChild and lastChild属性</h4>
+<p>访问childNodes数组的第一个元素或者最后一个元素，就可以使用使用上面的两个属性来代替childNodes[0] childNodes[ele.childNodes.length-1]</p>
+<h3 class="siamess-left">动态创建元素</h3>
+<p>innerHTML属性：可以获取给定元素里的html内容，</p>
+<p>创建元素节点 createElement()</p>
+<p>添加节点 appendChild()</p>
+<p>创建文本节点 createTextNode()</p>
+<p>在已有元素前面添加元素 parent.insertBefore(newElement, targetElement),或者是targetNode.parentNode.insertbefore(new, targetNode)</p>
+<p class="important">没有insertAfter！！！</p>
 
 
 
