@@ -15,6 +15,18 @@ title: dom操作整理
 <h3 class="siamess-left">获取和设置属性</h3>
 <p>getAttribute、setAttribute,这些方法是不属于document对象，只能通过元素节点调用。</p>
 <p>element.getAttribute('title')  or  element.setAttribute('title','this is title')</p>
+<h3 class="siamess-left">获取子元素 childNodes</h3>
+<p>element.childNodes => 获取到的是当前元素的所有子元素，是一个包含当前元素全部子元素的数组。 </p>
+<p class="important">你会发现你获取到的节点比实际的节点都的多，那是因为通过childNodes获取到的节点类型不止元素节点、属性节点、和文本节点这三种。</p>
+<h3 class="siamess-left">nodeType属性</h3>
+<p>每个节点都有nodeType属性，并且是数字不是英文。</p>
+<ul>
+    <li>元素节点 nodeType 1</li>
+    <li>属性节点 nodeType 2</li>
+    <li>文本节点 nodeType 3</li>
+</ul>
+<h3 class="siamess-left">属性节点的修改是通过setAttribute和getAttribute,那么文本节点的修改是通过什么呢？</h3>
+<p>答案是nodeValue.</p>
 
 
 
