@@ -5,11 +5,11 @@ window.onload = function  () {
 
 	var weekday = new Date().getDay();
 	switch (weekday){
-		1: headImg[0].style.backgroundImage = "url(http://www.siamess.cn/img/head.jpg)";break;
-		2: headImg[0].style.backgroundImage = "url(http://www.siamess.cn/img/head1.jpg)";break;
-		3: headImg[0].style.backgroundImage = "url(http://www.siamess.cn/img/head2.jpg)";break;
-		4: headImg[0].style.backgroundImage = "url(http://www.siamess.cn/img/head3.jpg)";break;
-		5: headImg[0].style.backgroundImage = "url(http://www.siamess.cn/img/head4.jpg)";break;
+		case 1: headImg[0].style.backgroundImage = "url(http://www.siamess.cn/img/head.jpg)";break;
+		case 2: headImg[0].style.backgroundImage = "url(http://www.siamess.cn/img/head1.jpg)";break;
+		case 3: headImg[0].style.backgroundImage = "url(http://www.siamess.cn/img/head2.jpg)";break;
+		case 4: headImg[0].style.backgroundImage = "url(http://www.siamess.cn/img/head3.jpg)";break;
+		case 5: headImg[0].style.backgroundImage = "url(http://www.siamess.cn/img/head4.jpg)";break;
 		default: headImg[0].style.backgroundImage = "url(http://www.siamess.cn/img/head.jpg)";break;
 	}
 }
