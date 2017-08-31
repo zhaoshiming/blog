@@ -1,7 +1,7 @@
 .head {
 	width: 100%;
 	height: 520px;
-	background: url('/img/head.jpg') no-repeat;
+	background-image: url('/img/head.jpg');
 	background-size: 100%;
     border-bottom: solid #9c8888 2px;
 }
