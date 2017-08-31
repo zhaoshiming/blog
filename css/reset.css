@@ -16,7 +16,11 @@ ul li {
   .container {
     width: 100%;
   }
-  .head,.head-content {
+  .head {
+    width: 100%;
+    height: 130px;
+  }
+  .head .head-content {
   	width: 100%;
     height: 130px;
   }
