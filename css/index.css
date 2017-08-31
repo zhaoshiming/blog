@@ -3,6 +3,7 @@
 	background: #0797C6;
 	height: 520px;
 	background: url('/img/head.jpg') no-repeat;
+	background-size：100%;
 }
 .head .head-content {
 	width: 1200px;
@@ -10,10 +11,13 @@
 	line-height: 520px;
 	text-align: center;
 	margin: 0 auto;
-	
-}
+	position: relative;
+}	
 .head h3 {
-
+	color: #fff;
+	position: absolute;
+	left: 20%;
+	bottom: -20%;
 }
 .container {
 	width: 666.6px;
