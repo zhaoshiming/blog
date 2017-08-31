@@ -3,7 +3,8 @@
 	background: #0797C6;
 	height: 520px;
 	background: url('/img/head.jpg') no-repeat;
-	background-size：100%;
+	background-size: 100%;
+    border-bottom: solid #9c8888 2px;
 }
 .head .head-content {
 	width: 1200px;
