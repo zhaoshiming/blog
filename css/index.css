@@ -12,7 +12,7 @@
 	text-align: center;
 	margin: 0 auto;
 	position: relative;
-}	
+}
 .head h3 {
 	color: #fff;
 	position: absolute;
@@ -32,7 +32,7 @@
 .rectangle{
 	width: 0;
 	height: 0;
-	border: 5px solid #000; 
+	border: 5px solid #000;
 }
 .date {
 	color: blue;
@@ -70,9 +70,9 @@
 	justify-content: center;
 	color: #af6a6a;
 	background: #e0dada;
-}	
+}
 .wrap-foot-me {
-	height: 150px;	
+	height: 150px;
 }
 .image {
 	width: 100%;
@@ -84,7 +84,7 @@
     position: relative;
     padding:5px 15px;
     margin: 10px 0;
-    color: #fff;  
+    color: #fff;
 }
 .important::before {
     content: "";
